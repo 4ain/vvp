@@ -1,0 +1,105 @@
+№1
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int a;
+    int b;
+    std::cout << "Введите стороны a и b.\n";
+    std::cin >> a >> b;
+    int s = a * b;
+    int p = 2 * (a + b);
+    std::cout << s << " - площадь.\n" << p << " - периметр.\n";;
+
+}
+
+№2
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    double d, L;
+    const double PI = 3.14;
+    cout << "Введите диаметр окружности" << endl;
+    cin >> d;
+    L = PI * d;
+    cout << "Длина окружности равна : " << L << endl;
+    return (0);
+
+  
+}
+
+№3
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    double a, b, arfm;
+    cout << "Введите два числа : " << endl;
+    cin >> a >> b;
+    arfm = (a + b) / 2;
+    cout << "Среднее арифметическое этих чисел равно : " << arfm << endl;
+    return(0);
+}
+
+№4
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    double a, b, sum, raz, pro, chas;
+    cout << "Введите два числа, не равных нулю  " << endl;
+    cin >> a >> b;
+    if (a, b == 0) {
+        cout << "Ошибка.Кажется,одно из ваших чисел равно 0,исправьте вводные данные" << endl;
+        return (0);
+    }
+    else {
+        sum = (a * a) + (b * b);
+        raz = (a * a) - (b * b);
+        pro = (a * a) * (b * b);
+        chas = (a * a) / (b * b);
+        cout << "Сумма : " << sum << endl << "Разность : " << raz << endl << "Произведение  : " << pro << endl << "Частное : " << chas << endl;
+    }
+    return (0);
+}
+
+№5
+
+#include <math.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    double a, b, sum, raz, pro, chas;
+    cout << "Введите два числа, не равных нулю  " << endl;
+    cin >> a >> b;
+    if (a, b == 0) {
+        cout << "Ошибка.Кажется,одно из ваших чисел равно 0,исправьте вводные данные" << endl;
+        return (0);
+    }
+    else {
+        sum = (abs(a)) + (abs(b));
+        raz = (abs(a)) - (abs(b));
+        pro = (abs(a)) * (abs(b));
+        chas = (abs(a)) / (abs(b));
+        cout << "Сумма : " << sum << endl << "Разность : " << raz << endl << "Произведение  : " << pro << endl << "Частное : " << chas << endl;
+    }
+    return (0);
+}
