@@ -1,0 +1,125 @@
+№1
+
+#include <math.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	double d;
+	double x1, y1, x2, y2;
+
+	cin >> x1 >> y1 >> x2 >> y2;
+
+
+	d = sqrt((pow((x2 - x1), 2)) + (pow((y2 - y1), 2)));
+
+	cout << "Расстояние между точками равно : " << d << endl;
+	return (0);
+
+}
+
+№2
+
+#include <math.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	double A, B, C;
+	double AС1, BC1, SUM_AС_BC;
+	cout << "Введите значения точек на координатной оси :" << endl;
+	cin >> A >> B >> C;
+	AС1 = С - A;
+	BC1 = C - B;
+	SUM_AС_BC = AС1 + BC1;
+
+	cout << "Длины отрезков \nAС: " << AС1 << endl << "BC: " << BC1 << endl;
+	cout << "Сумма отрезков : " << SUM_AС_BC << endl;
+
+}
+
+№3
+
+	#include <math.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+
+	int a, b, c, AC, BC;
+
+	cin >> a >> b >> c;
+
+	AC = c - a;
+
+	BC = b - c;
+
+	cout << AC * BC << endl;
+	return 0;
+}
+
+№4
+
+#include <math.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	double x1, x2, y1, y2, a, b, S, P;
+
+	cout << "Введите координаты вершин прямоугольника в двумерном пространстве" << endl;
+
+	cin >> x1 >> y1 >> x2 >> y2 ;
+	a = abs(x2 - x1);
+	b = abs(y2 - y1);
+	S = a * b;
+	P = a + a + b + b;
+	cout << "Площадь прямоугольника равна : " << S << endl;
+	cout << "Периметр прямоугольника равен : " << P << endl;
+	return (0);
+
+
+
+
+
+
+}
+
+№5
+
+#include <math.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+
+	double x1, x2, x3, y1, y2, y3, a, b, c, s, p, pP;
+	cout << "Введите координаты вершин треугольника : " << endl;
+	cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+	a = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+	b = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+	c = sqrt(pow((x3 - x1), 2) + pow((y3 - y1), 2));
+
+
+	pP = ((a + b + c) / 2);
+	p = a + b + c;
+	s = sqrt(pP * (pP - a) * (pP - b) * (pP - c));
+	cout << "Площадь треугольника равна : " << s << endl;
+	cout << "Периметр треугольника равен : " << p << endl;
+	return (0);
+
+}
