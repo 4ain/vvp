@@ -1,0 +1,91 @@
+№1
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a,m;
+	printf("Введите угол");
+	scanf("%f", &a);
+	m =(float) a*3.14/180;
+	printf("Значение в радианах: %f\n", m);
+
+}
+№2
+#include <stdio.h>
+#include <locale.h>
+#include < math.h >
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, m;
+	printf("Введите угол в радианах");
+	scanf("%f", &a);
+	m = (float)a * 180 /3.14;
+	printf("Значение в радианах: %f\.1n", round(m));
+
+}
+№3
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x, y, a,c,z;
+	printf("Введите x");
+	scanf("%f", &x);
+	printf("Введите A");
+	scanf("%f", &a);
+	printf("Введите Y");
+	scanf("%f", &y);
+	c = a / x;
+	z = c * y;
+	printf("1кг стоит: %f\n", c);
+	printf("%.3f кг стоит:%f\n",y, z);
+}
+№4
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float v1, v2, s, v, t,s1;
+	printf("Введите скорости первого и второго автомобиля соотвественно:");
+	scanf("%f%f", &v1, &v2);
+	printf("Введите расстояние и время соотвественно:");
+	scanf("%f%f", &s, &t);
+	v = v1 + v2;
+	s1 = v / t+s;
+	printf("Расстояние между автомобилями через %f часа равно: %f", t, s1);
+	
+}
+№5
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b, x;
+	printf("Введите коэффициенты A и B соответственно:");
+	scanf("%f%f", &a, &b);
+	if (a != 0)
+		x = -b / a;
+	else
+		printf("Error");
+	printf("Ответ:%f\n", x);
+}
+№6
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a1, b1, a2, b2, x, y,c1,c2;
+	printf("Введите коэффициенты первого уравнения A1, B1 и C1 соответственно");
+	scanf("%f%f%f", &a1, &b1,&c1);
+	printf("Введите коэффициенты второго уравнения A2, B2 и C1 соответственно");
+	scanf("%f%f%f", &a2, &b2, &c2);
+	x = (c1 * b1 - c2 * b2) / (a1 * b2 - a2 * b1);
+	y = (a1 * c2 - a2 * c1) / (a1 * b2 - a2 * b1);
+	printf("Ответ: %.3f %.3f\n", x, y);
+}
