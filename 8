@@ -1,0 +1,76 @@
+№1
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a,l;
+	printf("Введите размер файла в байтах ");
+	scanf("%d", &a);
+	l =(float) a / 1024;
+	printf("Размер файла в килобайтах: %g\n", rint(l));
+}
+№2
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, k;
+	printf("Введите размер длин отрезков A и B соответственно:");
+	scanf("%d%d", &a, &b);
+	k = a;
+	c = 0;
+	for (k; k >= b; k -= b)
+		c++;
+	printf("Количество длин отрезков B в A:%d\n", c);
+}
+№3
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, k, l;
+	printf("Введите размер длин отрезков A и B соответственно: ");
+	scanf("%d%d", &a, &b);
+	k = a;
+	c = 0;
+	l = 0;
+	for (k; k >= b; k -= b)
+		c++;
+	l = a - c * b;
+	printf("Количество длина незанятой части в отрезке A:%d\n", l);
+}
+№4
+#include <stdio.h>
+#include <locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, k;
+	printf("Введите число: ");
+	scanf("%d", &a);
+	c = a % 10;
+	k = a / 10;
+	b = round(c * 10) + k;
+	printf("Новое число: %d\n", b);
+}
+№5
+#include <stdio.h>
+#include <locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, k,d;
+	printf("Введите число: ");
+	scanf("%d", &a);
+	c = (a % 100) % 10;
+	d= (a % 100) / 10;
+	k = a / 100;
+	b = round(d * 100)+ round(c*10) + k;
+	printf("Новое число: %d\n", b);
+}
